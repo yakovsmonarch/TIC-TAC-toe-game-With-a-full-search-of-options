@@ -33,8 +33,9 @@ namespace _3x3
         #endregion
 
         #region Методы класса
+        
         // прорисовка доски
-        Bitmap Field(PictureBox pictbox)
+        private Bitmap Field(PictureBox pictbox)
         {
            bmap = new Bitmap(pictbox.Width, pictbox.Height);
            gr = Graphics.FromImage(bmap);
@@ -45,8 +46,9 @@ namespace _3x3
 
            return bmap;
         }
+        
         // прорисовка хода и его отображение в массиве
-        Bitmap PaintShape(Graphics gr, Bitmap bmappar, int x, int y, bool typeshape = true)
+        private Bitmap PaintShape(Graphics gr, Bitmap bmappar, int x, int y, bool typeshape = true)
         {
             gr = Graphics.FromImage(bmappar);
             int xp = ConvertToCoordinate(x), yp = ConvertToCoordinate(y);
@@ -64,8 +66,9 @@ namespace _3x3
                 return bmappar;
             }
         }
+        
         // прорисовка позиции
-        Bitmap PaintPosition(Graphics gr, Bitmap bmappar, int[,] map)
+        private Bitmap PaintPosition(Graphics gr, Bitmap bmappar, int[,] map)
         {
             bmappar = Field(pictureBox1);
             for(int i = 0; i<3; i++)
@@ -78,16 +81,19 @@ namespace _3x3
                 }
             return bmappar;
         }
-        int ConvertToCoordinate(int n, int sizefild = 100)
+        
+        private int ConvertToCoordinate(int n, int sizefild = 100)
         {
             return (n / sizefild)*sizefild + (sizefild-50)/2;
         }
-        int ConvertToIndex(int n)
+        
+        private int ConvertToIndex(int n)
         {
             return n / 100;
         }
+        
         // определение выигранной позиции
-        bool GameEnd(int[,] map, bool ShapeType) 
+        private bool GameEnd(int[,] map, bool ShapeType) 
         {
             if (ShapeType) // искать за крестик
             {
@@ -120,8 +126,9 @@ namespace _3x3
                 return false; //нолики не выиграли
             }
         }
+        
         // оценка конеченой позиции: виграно 1, ничья 0, поражение -1
-        int ValuePositioin(int[,] map, bool ShapeType)
+        private int ValuePositioin(int[,] map, bool ShapeType)
         {
             if (ShapeType)
             {
@@ -136,9 +143,10 @@ namespace _3x3
 
             return 0;
         }
+        
         // метод оценки возможного хода
         long numeric = 0; // подсчет общего числа вызовов <Appraisal>
-        int Appraisal(bool ShapeType)
+        private int Appraisal(bool ShapeType)
         {
             numeric++; //тест
 
@@ -185,8 +193,9 @@ namespace _3x3
 
             return max;
         }
+        
         // случайный ход из начальной позиции
-        int RandomMove(int endindex)
+        private int RandomMove(int endindex)
         {
             return new Random().Next(0, endindex);
         }
