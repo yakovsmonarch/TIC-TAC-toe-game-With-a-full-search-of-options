@@ -23,3 +23,12 @@ C:\Users\yaser\OneDrive\Документы\Visual Studio 2010\Projects\3x3\3x3\o
 C:\Users\yaser\OneDrive\Документы\Visual Studio 2010\Projects\3x3\3x3\obj\x86\Debug\3x3.csproj.GenerateResource.Cache
 C:\Users\yaser\OneDrive\Документы\Visual Studio 2010\Projects\3x3\3x3\obj\x86\Debug\3x3.exe
 C:\Users\yaser\OneDrive\Документы\Visual Studio 2010\Projects\3x3\3x3\obj\x86\Debug\3x3.pdb
+D:\Projects\TicTac\3x3\3x3\bin\Debug\3x3.exe
+D:\Projects\TicTac\3x3\3x3\bin\Debug\3x3.pdb
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\3x3.csproj.AssemblyReference.cache
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\_3x3.Form1.resources
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\_3x3.Properties.Resources.resources
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\3x3.csproj.GenerateResource.cache
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\3x3.csproj.CoreCompileInputs.cache
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\3x3.exe
+D:\Projects\TicTac\3x3\3x3\obj\x86\Debug\3x3.pdb
